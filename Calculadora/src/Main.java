@@ -7,6 +7,21 @@ public class Main {
         //calcularSoma(num_1, num_2);
         // calcularSubtracao(num_1, num_2);
         // System.out.println(calcularSubtracao(10, 20));
+
+        System.out.println(calcularMultiplicacao(10,20));
+
+        System.out.println(calcularPotencia(2,2));
+
+    }
+
+
+    public static double calcularPotencia(int base, int expoente) {
+        return Math.pow(base, expoente);
+    }
+
+
+    public static int calcularMultiplicacao(int n, int num) {
+        return n * num;
     }
 
     public static int calcularSoma (int n, int num){
@@ -15,15 +30,15 @@ public class Main {
     }
 
     // public static int calcularSoma(int n, int num){
-        //return n + num;
-   // }
+    //return n + num;
+    // }
 
-   // public static int calcularSubtracao (int n, int num){
-       // int result = n - num;
-      //  return result;
+    // public static int calcularSubtracao (int n, int num){
+    // int result = n - num;
+    //  return result;
     //}
 
     public static int calcularSubtracao(int n, int num){
-       return n - num;
+        return n - num;
     }
 }
