@@ -83,8 +83,6 @@ public void teste_Porcentagem(){
 }
 
 
-
-
 public static int calcularSoma(int n, int num) {
      return n + num;
  }
@@ -109,16 +107,18 @@ public static int calcularSubtracao(int n, int num){
     assertEquals(90, sub);
 }
 
-public static double calcularExponenciacao(double base, double expoente){
-    return Math.pow(base, expoente);
+public static int calcularFatorial(int n) {
+    if (n == 0 || n == 1) {
+        return 1;
+    }
+    return n * calcularFatorial(n - 1);
 }
 
 @Test
-public void teste_Exponenciacao(){
-    double base = 2;
-    double expoente = 3;
-    double res = calcularExponenciacao(base, expoente);
-    assertEquals(8.0, res);
+public void Teste_Fatorial() {
+    int n = 5;
+    int resultado = calcularFatorial(n);
+    assertEquals(120, resultado);
 }
 
 
